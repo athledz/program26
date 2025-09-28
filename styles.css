@@ -1,0 +1,148 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #004d99;
+    color: white;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+header p {
+    font-size: 1.1em;
+    margin: 5px 0 0;
+}
+
+h2 {
+    text-align: center;
+    color: #004d99;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* --- Responsive Table Container (Key for Responsiveness) --- */
+.table-responsive-container {
+    overflow-x: auto; /* Permet le défilement horizontal sur les petits écrans */
+    margin: 20px auto;
+    width: 95%;
+    max-width: 1200px;
+}
+
+/* --- Styles de Tableau Généraux --- */
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    /* Pour le tableau général, on assure qu'il a une largeur minimale pour forcer le scroll */
+    min-width: 800px; 
+    margin: 0; /* Géré par le conteneur responsive */
+}
+
+.programme-ramadan {
+    max-width: 400px; 
+    margin: 20px auto; /* Rétablit la marge pour le petit tableau */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 5px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.95em;
+}
+
+thead th {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* --- Couleurs des Phases Hivernales (En-têtes) --- */
+.phase-dev-gen { background-color: #28a745; } 
+.phase-dev-ori { background-color: #ffc107; color: #333; } 
+.phase-pre-comp { background-color: #dc3545; } 
+.phase-comp { background-color: #007bff; } 
+
+/* Styles pour la ligne des cycles (C1, C2...) */
+.cycle-header th {
+    background-color: #34495e; 
+    font-size: 1em;
+    padding: 15px 5px;
+}
+
+/* Styles des objectifs */
+.objective-row .cycle-obj {
+    background-color: #e9ecef;
+    font-weight: 600;
+    height: 70px;
+}
+
+/* Styles pour la Programmation Estivale */
+.phase-comp-est { 
+    background-color: #004d99; 
+    color: white; 
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+/* --- Styles du Programme Ramadan --- */
+.ramadan-date {
+    text-align: center;
+    font-weight: bold;
+    color: #884EA0; 
+    font-size: 1.1em;
+}
+
+.programme-ramadan thead th {
+    background-color: #884EA0;
+}
+
+.programme-ramadan tbody tr:nth-child(odd) {
+    background-color: #f0e6fa; 
+}
+
+hr {
+    border: none;
+    border-top: 3px solid #004d99;
+    width: 50%;
+    margin: 40px auto;
+}
+
+/* --- Media Query pour Optimisation Mobile --- */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    /* Réduit la taille du texte et le padding dans les cellules pour gagner de la place */
+    th, td {
+        padding: 8px 3px;
+        font-size: 0.8em;
+    }
+}
