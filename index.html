@@ -3,82 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programme Général Hivernal et Spécial Ramadan (Responsive)</title>
+    <title>Programme Général Hivernal (Mobile Ready)</title>
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
 
     <header>
-        <h1>Programme Général  Période Hivernal 2026  </h1>
-         <p>(Oct. Nov. Déc. Jan. Fév.) 19 semaines, 95 Séances </p>
-        
+        <h1>Programme Général Période Hivernal 2026</h1>
+        <p>(Oct. Nov. Déc. Jan. Fév.) 19 semaines, 95 Séances</p>
     </header>
 
     <section id="periode-hivernale">
         <h2>Périodisation Hivernale : Objectifs et Cycles</h2>
         
-        <div class="table-responsive-container">
-            <table class="programme-general">
-                <thead>
-                    <tr>
-                        <th colspan="2" class="phase-dev-gen">Développement Générale (Phase 1)</th>
-                        <th colspan="2" class="phase-dev-ori">Développement Orientée (Phase 2)</th>
-                        <th colspan="2" class="phase-pre-comp">Pré-Compétition</th>
-                        <th colspan="1" class="phase-comp">Compétition</th>
-                    </tr>
-                    <tr class="cycle-header">
-                        <th>C1 (4 sem)</th>
-                        <th>C2 (3 sem)</th>
-                        <th>C3 (3 sem)</th>
-                        <th>C4 (2 sem)</th>
-                        <th>C5 (2 sem)</th>
-                        <th>C6 (2 sem)</th>
-                        <th>C7 (3 sem)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="period-row">
-                        <td>04 Oct au 30 Oct</td>
-                        <td>01 Nov au 20 Nov</td>
-                        <td>22 Nov au 11 Dec</td>
-                        <td>13 Dec au 25 Dec</td>
-                        <td>27 Dec au 08 Jan</td>
-                        <td>10 Jan au 22 Jan</td>
-                        <td>24 Jan au 15 Fev</td>
-                    </tr>
-                    
-                    <tr class="objective-row">
-                        <td class="cycle-obj">Puissance sous-maximale</td>
-                        <td class="cycle-obj">Puissance maximale</td>
-                        <td class="cycle-obj">Force maximale</td>
-                        <td class="cycle-obj">Explosivitié</td>
-                        <td class="cycle-obj">Puissance maximale</td>
-                        <td class="cycle-obj">Explosivité</td>
-                        <td class="cycle-obj">Explosivité</td>
-                    </tr>
-                    
-                    
-                </tbody>
-            </table>
+        <div id="programme-cards">
+            
+            <div class="cycle-card phase-dev-gen">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <span class="cycle-title">C1 (4 sem) - Développement Générale (Phase 1)</span>
+                    <span class="cycle-period">04 Oct au 30 Oct</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="card-content">
+                    <p class="objective">Objectif : **Puissance sous-maximale**</p>
+                </div>
+            </div>
+            
+            <div class="cycle-card phase-dev-gen">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <span class="cycle-title">C2 (3 sem) - Développement Générale (Phase 1)</span>
+                    <span class="cycle-period">01 Nov au 20 Nov</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="card-content">
+                    <p class="objective">Objectif : **Puissance maximale**</p>
+                </div>
+            </div>
+            
+            <div class="cycle-card phase-dev-ori">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <span class="cycle-title">C3 (3 sem) - Développement Orientée (Phase 2)</span>
+                    <span class="cycle-period">22 Nov au 11 Dec</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="card-content">
+                    <p class="objective">Objectif : **Force maximale**</p>
+                </div>
+            </div>
+            
+            <div class="cycle-card phase-dev-ori">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <span class="cycle-title">C4 (2 sem) - Développement Orientée (Phase 2)</span>
+                    <span class="cycle-period">13 Dec au 25 Dec</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="card-content">
+                    <p class="objective">Objectif : **Explosivitié**</p>
+                </div>
+            </div>
+
+            <div class="cycle-card phase-pre-comp">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <span class="cycle-title">C5 (2 sem) - Pré-Compétition</span>
+                    <span class="cycle-period">27 Dec au 08 Jan</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="card-content">
+                    <p class="objective">Objectif : **Puissance maximale**</p>
+                </div>
+            </div>
+
+            <div class="cycle-card phase-pre-comp">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <span class="cycle-title">C6 (2 sem) - Pré-Compétition</span>
+                    <span class="cycle-period">10 Jan au 22 Jan</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="card-content">
+                    <p class="objective">Objectif : **Explosivité**</p>
+                </div>
+            </div>
+            
+            <div class="cycle-card phase-comp">
+                <div class="card-header" onclick="toggleCard(this)">
+                    <span class="cycle-title">C7 (3 sem) - Compétition</span>
+                    <span class="cycle-period">24 Jan au 15 Fev</span>
+                    <span class="toggle-icon">+</span>
+                </div>
+                <div class="card-content">
+                    <p class="objective">Objectif : **Explosivité**</p>
+                </div>
+            </div>
         </div>
+
+        <p class="phase-comp-est">
+            Programmation Période Estival : En fonction du calendrier 2026
+        </p>
     </section>
 
     <hr>
 
     <section id="programme-ramadan">
-        <h2>Programme Spécial Ramadan </h2>
+        <h2>Programme Spécial Ramadan 🕌</h2>
         <p class="ramadan-date">Du 16 Février au 18 Mars 2026</p>
         
-        <table class="programme-ramadan"> <thead>
-                
+        <table class="programme-ramadan"> 
+            <thead>
+                <tr>
+                    <th>Semaine</th>
+                    <th>Période</th>
+                </tr>
             </thead>
-            
-                        <td colspan="7" class="phase-comp-est">
-                            Programmation Période Estival : En fonction du calendrier 2026
-                        </td>
-                    </tr>  
+            <tbody>
+                <tr><td>Semaine 1</td><td>2ème jour au 19 Fév.</td></tr>
+                <tr><td>Semaine 2</td><td>20 Fév. au 27 Fév.</td></tr>
+                <tr><td>Semaine 3</td><td>28 Fév. au 06 Mar</td></tr>
+                <tr><td>Semaine 4</td><td>07 Mar au 13 Mar</td></tr>
+                <tr><td>Semaine 5</td><td>14 Mar au 17 Mar</td></tr>
+            </tbody>
         </table>
     </section>
 
+    <script>
+        /**
+         * Bascule l'affichage (déplie/replie) du contenu d'une carte de cycle.
+         * @param {HTMLElement} headerElement - L'en-tête de la carte cliquée.
+         */
+        function toggleCard(headerElement) {
+            // Trouve le conteneur parent (la carte entière)
+            const card = headerElement.parentElement;
+            // Trouve le contenu de la carte à basculer
+            const content = headerElement.nextElementSibling;
+            // Trouve l'icône +/-
+            const icon = headerElement.querySelector('.toggle-icon');
+
+            // Bascule la classe 'active' sur la carte entière
+            card.classList.toggle('active');
+
+            // Bascule l'affichage du contenu
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.textContent = '+';
+            } else {
+                // Définit la hauteur à 'scrollHeight' pour que l'animation fonctionne
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.textContent = '-';
+            }
+        }
+
+        // Déploie la première carte par défaut au chargement
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const firstHeader = document.querySelector('.cycle-card .card-header');
+            if (firstHeader) {
+                toggleCard(firstHeader);
+            }
+        });
+    </script>
 </body>
 </html>
